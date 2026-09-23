@@ -1,0 +1,26 @@
+OVOSUR Calidad V10 - Persistencia, Vigencia y Bloqueo Administrativo
+
+1. Características nuevas:
+   - Se agregan al constructor.
+   - Se guardan dentro de la versión al Guardar borrador.
+   - Al volver desde la bandeja con Continuar edición se restauran.
+   - En borrador pueden editarse y eliminarse.
+
+2. Secciones:
+   - En una nueva ET, las secciones base pueden incluirse/quitarse.
+   - Las secciones adicionales pueden eliminarse.
+   - Mientras esté en BORRADOR puede modificarse la estructura.
+   - Fuera de BORRADOR la estructura queda bloqueada.
+
+3. Finalización de vigencia:
+   - Antes de finalizar una ET vigente se buscan lotes pendientes asociados.
+   - Demo V09: C39487D2, C39487D3 y C39487D4 bloquean la finalización porque no están CERRADOS.
+   - Cuando todos los lotes de esa ET estén cerrados, se permite finalizar vigencia.
+   - Luego puede publicarse la nueva versión.
+
+4. Bloqueo Admin:
+   - Al finalizar vigencia, la versión queda histórica con Bloqueo Admin.
+   - Evita reactivar accidentalmente una versión antigua.
+   - El mockup identifica la acción como restringida a Jefa de Calidad.
+
+Nota: es un mockup front-end; la persistencia es simulada en memoria durante la sesión.
